@@ -1,10 +1,17 @@
 import React from "react";
+import Header from "./Components/Header";
+import Main from "./Components/Main";
+import Footer from "./Components/Footer";
+import { BrowserRouter as Router } from "react-router-dom";
 
-
-export default function App() {
+function App() {
   return (
-    <React.Fragment>
-      <h1>Hello, World!</h1>
-    </React.Fragment>
+    <Router>
+      <Header />
+      <Main />
+      <Footer />
+    </Router>
   );
 }
+
+export default App;
