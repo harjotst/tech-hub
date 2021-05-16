@@ -1,0 +1,27 @@
+{
+  "name": "tech-hub",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "client": "npm start --prefix front-end",
+    "server": "nodemon back-end/server.js",
+    "start": "concurrently \"npm run client\" \"npm run server\"",
+    "items": "node back-end/config/items.js",
+    "items -d": "node back-end/config/items.js -d"
+  },
+  "keywords": [],
+  "author": "Harjot Singh Tathgur",
+  "license": "MIT",
+  "description": "TechHub: Fake E-commerce Website",
+  "devDependencies": {
+    "concurrently": "^6.1.0",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.9"
+  }
+}
